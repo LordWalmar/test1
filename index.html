@@ -224,6 +224,7 @@
 		</footer>
 	</div>
 	<div id="shadow"></div>
+		<div id="sign_wrapper">
 	<div id="sign">
 		<div id="signData">
 			<p id="imgR"></p>
@@ -233,12 +234,15 @@
 				<h3>Sign-in or <a href="#">Register</a></h3>
 			</div>
 			<form method="POST" name="form1" id="myForm">
+				<p id="wrongEmail">Email is empty.</p>
 				<input class="inputT" id="login" type="text" name="name" placeholder="Email"/><!--onblur="if (this.value == '') {this.value = 'Email or Username';}" onfocus="if (this.value == 'Email or Username') {this.value = '';}" value="Email or Username" -->
+				<p id="wrongPassword">Password is empty</p>
 				<input class="inputT" id="password" type="password" name="password" placeholder="Password"/>
 				<a id="reset" href="#">Reset my password</a>
-				<input id="button" type="submit" value="Sign-in" class="inputT">
+				<input id="button" type="submit" value="Sign-in">
 			</form>
 		</div>
+	</div>
 	</div>
 </body>
 </html>
